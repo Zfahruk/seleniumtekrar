@@ -13,7 +13,6 @@ public class Day01OrnekAmazon {
      //2--Arama kutusuna "baby stroller" yaziniz
     //3--2. siradaki ürüne tiklayiniz.
     //4--Ürün sayfasina gittikten sonra, ürünün fiyatini aliniz.
-
     @Test
     public void test01(){
         WebDriverManager.chromedriver().setup();
@@ -23,7 +22,6 @@ public class Day01OrnekAmazon {
         WebElement searchbox = driver.findElement(By.id("twotabsearchtextbox"));
         searchbox.sendKeys("baby stroller"+ Keys.ENTER);
         //searchbox.submit();
-
         WebElement secondproduct = driver.findElement(By.xpath("(//span[@class='a-size-medium a-color-base a-text-normal'])[2]"));
         secondproduct.click();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
