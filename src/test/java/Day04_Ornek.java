@@ -49,7 +49,7 @@ public class Day04_Ornek {
 
         WebElement urunIsmi =driver.findElement(By.id("productTitle"));
         boolean gorunuyorMu = urunIsmi.isDisplayed();
-        System.out.println("gorunuyor MU : "+gorunuyorMu);
+        System.out.println("gorunuyor MU : " + gorunuyorMu);
 
 
 
